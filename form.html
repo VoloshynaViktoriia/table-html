@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section>
+            <form action="https://formspree.io/victoryvoloshina@gmail.com" method="POST">
+                <label for="name">Name:</label>
+                <input id="name" type="text" placeholder="Your name" name="name" pattern="[A-Za-zА-Яа-яЁё]" required/>
+                <br>
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="your@email.com" required/>
+                <br>
+                <label for="password">Password:</label>
+                <br>
+                <input type="password" name="password"/>
+                <br>
+                <p>Your phone number:
+                    <br>
+                    <input type="tel">
+                </p>
+                <br>
+                <p>Sex:
+                    <label for="sex-male">Male</label>
+                    <input id="sex-male" type="radio" name="sex" value="m"/>
+                    <label for="sex-female">Female</label>
+                    <input id="sex-female" type="radio" name="sex" value="f"/>
+                </p>
+                <br>
+                <label for="age">Age:</label>
+                <input id="age" type="text" name="age" placeholder="Your age" required/>
+                <br>
+                <label for="city">Your city</label>
+                <br>
+                <select id="city" name="city">
+                    <option value="Lviv">Lviv</option>
+                    <option value="Kyiv">Kyiv</option>
+                    <option value="Dnipro">Dnipro</option>
+                    <option value="Odesa">Odesa</option>
+                    <option value="Kharkiv">Kharkiv</option>
+                </select>
+                <br>
+                <p>Choose one or more languages:
+                    <br>
+                    <label for="">JavaScript</label>
+                    <input id="JavaScript" type="checkbox" name="JavaScript"/>
+                    <br>
+                    <label for="">Ruby</label>
+                    <input id="Ruby" type="checkbox" name="Ruby"/>
+                    <br>
+                    <label for="">Python</label>
+                    <input id="Python" type="checkbox" name="Python"/>
+                    <br>
+                    <label for="">PHP</label>
+                    <input id="PHP" type="checkbox" name="PHP"/>
+                    <br>
+                    <label for="">Java</label>
+                    <input id="Java" type="checkbox" name="Java"/>
+                    <br>
+                    <label for="">C#</label>
+                    <input id="C#" type="checkbox" name="C#"/>
+                    <br>
+                    <label for="C++">C++</label>
+                    <input id="C++" type="checkbox" name="C++"/>
+                    <br>
+                    <label for="Objective-C">Objective-C</label>
+                    <input id="Objective-C" type="checkbox" name="Objective-C"/>
+                </p>
+                <label for="photo">Your photo:</label>
+                <br>
+                <input id="photo" type="file" name="photo"/>
+                <br>
+                <input type="submit" value="Submit"/>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
