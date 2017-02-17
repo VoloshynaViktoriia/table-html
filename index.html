@@ -7,10 +7,13 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to our site!</h1>
+        <nav>
+            <a href="/form.html">Form</a>
+        </nav>
     </header>
     <main>
         <section>
+            <h4 class="title">Table</h4>
             <table>
                 <!--string-1-->
                 <tr> 
@@ -62,33 +65,64 @@
                 </tr>
             </table>
         </section>
+        <div>
+            <article>
+                <h4>Lorem ipsum</h4>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <address>Cicero</address>
+            </article>
+        </div>
         <section>
-            <h4>Disk-type list</h4>
-            <ul class="disk-type">
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
-        </section>
-        <section>
-            <h4>Square-type list</h4>
-            <ul class="square-type">
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
-        </section>
-        <section>
-            <h4>Circle-type list</h4>
-            <ul class="circle-type">
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
+            <h4>Different types of markers:</h4>
+            <nav>
+                <ul class="disc">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li class='no-marker'>
+                        <ul class="square">
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                            <li class='no-marker'>
+                                <ul class="circle">
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav>
+                <h4>Different types of ordered lists::</h4>
+                    <ol type="1">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li class='no-marker'>
+                            <ol class="upper-roman">
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                                <li class='no-marker'>
+                                    <ol class="lower-alpha">
+                                        <li>Item 1</li>
+                                        <li>Item 2</li>
+                                        <li>Item 3</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+            </nav>
         </section>
     </main>
     <footer>
-     Copyright VV.
     </footer>
 </body>
 </html>

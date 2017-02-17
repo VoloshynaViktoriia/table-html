@@ -6,6 +6,11 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="/form.html">Home</a>
+        </nav>
+    </header>
     <main>
         <section>
             <form action="https://formspree.io/victoryvoloshina@gmail.com" method="POST">
@@ -16,23 +21,21 @@
                 <input id="email" type="email" name="email" placeholder="your@email.com" required/>
                 <br>
                 <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="password"/>
                 <br>
-                <input type="password" name="password"/>
+                <label for="phone">Your phone number:</label>
+                <input id="phone" name="phone" type="tel" placeholder="phone"/>
                 <br>
-                <p>Your phone number:
-                    <br>
-                    <input type="tel">
-                </p>
-                <br>
-                <p>Sex:
+                <fieldset>
+                    <legend>Sex:</legend>
                     <label for="sex-male">Male</label>
                     <input id="sex-male" type="radio" name="sex" value="m"/>
                     <label for="sex-female">Female</label>
                     <input id="sex-female" type="radio" name="sex" value="f"/>
-                </p>
+                </fieldset>
                 <br>
                 <label for="age">Age:</label>
-                <input id="age" type="text" name="age" placeholder="Your age" required/>
+                <input id="age" type="number" name="age" placeholder="Your age" required/>
                 <br>
                 <label for="city">Your city</label>
                 <br>
@@ -44,24 +47,25 @@
                     <option value="Kharkiv">Kharkiv</option>
                 </select>
                 <br>
-                <p>Choose one or more languages:
+                <fieldset>
+                    <legend>Choose one or more languages:</legend>
                     <br>
-                    <label for="">JavaScript</label>
+                    <label for="JavaScript">JavaScript</label>
                     <input id="JavaScript" type="checkbox" name="JavaScript"/>
                     <br>
-                    <label for="">Ruby</label>
+                    <label for="Ruby">Ruby</label>
                     <input id="Ruby" type="checkbox" name="Ruby"/>
                     <br>
-                    <label for="">Python</label>
+                    <label for="Python">Python</label>
                     <input id="Python" type="checkbox" name="Python"/>
                     <br>
-                    <label for="">PHP</label>
+                    <label for="PHP">PHP</label>
                     <input id="PHP" type="checkbox" name="PHP"/>
                     <br>
-                    <label for="">Java</label>
+                    <label for="Java">Java</label>
                     <input id="Java" type="checkbox" name="Java"/>
                     <br>
-                    <label for="">C#</label>
+                    <label for="C#">C#</label>
                     <input id="C#" type="checkbox" name="C#"/>
                     <br>
                     <label for="C++">C++</label>
@@ -69,7 +73,10 @@
                     <br>
                     <label for="Objective-C">Objective-C</label>
                     <input id="Objective-C" type="checkbox" name="Objective-C"/>
-                </p>
+                </fieldset>
+                <label for="salary">Salary:</label>
+                <input type="range" id="salary" name="salary" min="300" max="6000" step="50" value="1500"> 
+                <br>
                 <label for="photo">Your photo:</label>
                 <br>
                 <input id="photo" type="file" name="photo"/>
